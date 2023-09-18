@@ -1,0 +1,67 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @babel-presets-env/babel-preset -D
+
+PATH: 
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\Pablo\AppData\Local\Programs\Python\Python311\;C:\Program Files\Git\cmd;C:\Users\Pablo\AppData\Local\Microsoft\WindowsApps;C:\Users\Pablo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Pablo\AppData\Roaming\npm;C:\Users\Pablo\AppData\Local\Yarn\bin;C:\Users\Pablo\AppData\Local\Programs\Python\Python311\;C:\Program Files\MongoDB\Server\6.0\bin;C:\Users\Pablo\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.11.5;C:\Users\Pablo\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.11.5\Script\pip.exe;
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@babel-presets-env%2fbabel-preset: Not found
+      at params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66145:18)
+      at self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "proyecto-modelado-y-analis-de-datos-slick-line",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+     "build": "babel src --out-dir build",
+      "dev": "nodemon src/index.js -exec babel-node",
+      "start": "node build/index.js"
+    },
+    "keywords": [],
+    "author": "Gasparini",
+    "license": "ISC",
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "cors": "^2.8.5",
+      "dotenv": "^16.3.1",
+      "express": "^4.18.2",
+      "helmet": "^7.0.0",
+      "jsonwebtoken": "^9.0.1",
+      "mongoose": "^7.4.2",
+      "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+      "@babel/cli": "^7.22.10",
+      "@babel/core": "^7.22.10",
+      "@babel/node": "^7.22.10",
+      "@babel/preset-env": "^7.22.10",
+      "nodemon": "^3.0.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
